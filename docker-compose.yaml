@@ -1,0 +1,12 @@
+# Docker compose for setting up test database
+
+version: '3.8'
+services:
+  postgres:
+    image: postgres:13
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: data-writer
+      POSTGRES_PASSWORD: secure_me
+      POSTGRES_DB: cricket

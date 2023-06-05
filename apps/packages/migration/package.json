@@ -1,0 +1,19 @@
+{
+  "name": "migration",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "migrate:up": "knex migrate:latest --env development",
+    "migrate:down": "knex migrate:rollback",
+    "migrate:make": "knex migrate:make "
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "knex": "^2.4.2",
+    "pg": "^8.11.0"
+  }
+}
